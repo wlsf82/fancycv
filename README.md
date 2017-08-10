@@ -19,40 +19,42 @@ describe("Walmyr Filho's cv", () => {
     });
 
     describe("Professional experience", () => {
-        const jobs = {
-            current: {
-                company: "appear.in",
-                role: "QA engineer",
-                mainActivities: [
-                    "e2e test automation with Protractor",
-                    "UI test automation with XCUITest",
-                    "CI/CD infrastructure and system management",
-                    "code review"
-                ],
-                stack: [ "node.js", "protractor", "selenium webdriver js", "tape", "XCUITest", "Terraform", "GoCD" ]
-            },
-            previous: {
-                company: "taller.net.br",
-                role: "QA engineer",
-                mainActivities: [
-                    "e2e test automation with Protractor and Cucumber",
-                    "CMS development with Drupal framework"
-                ],
-                stack: [ "node.js", "protractor", "cucumber", "Drupal", "HTML", "CSS", "javascript", "SASS", "Vagrant" ]
-            },
-            older: {
-                company: "adp.com",
-                role: "Senior QA analyst",
-                mainActivities: [
-                    "e2e test automation with Selenium and HT QTP",
-                    "bug tracking management",
-                    "performance testing analysis"
-                ],
-                stack: [ "java", "VBScript", "SQL" ]
-            }
-        };
+        it("should verify you current role base on your current, previous and olter job", () => {
+            const jobs = {
+                current: {
+                    company: "appear.in",
+                    role: "QA engineer",
+                    mainActivities: [
+                        "e2e test automation with Protractor",
+                        "UI test automation with XCUITest",
+                        "CI/CD infrastructure and system management",
+                        "code review"
+                    ],
+                    stack: [ "node.js", "protractor", "selenium webdriver js", "tape", "XCUITest", "Terraform", "GoCD" ]
+                },
+                previous: {
+                    company: "taller.net.br",
+                    role: "QA engineer",
+                    mainActivities: [
+                        "e2e test automation with Protractor and Cucumber",
+                        "CMS development with Drupal framework"
+                    ],
+                    stack: [ "node.js", "protractor", "cucumber", "Drupal", "HTML", "CSS", "javascript", "SASS", "Vagrant" ]
+                },
+                older: {
+                    company: "adp.com",
+                    role: "Senior QA analyst",
+                    mainActivities: [
+                        "e2e test automation with Selenium and HT QTP",
+                        "bug tracking management",
+                        "performance testing analysis"
+                    ],
+                    stack: [ "java", "VBScript", "SQL" ]
+                }
+            };
 
-        expect(jobs.current.role).toEqual("QA engineer");
+            expect(jobs.current.role).toEqual("QA engineer");
+        });
     });
 
     describe("Other projects and comunity contribution", {

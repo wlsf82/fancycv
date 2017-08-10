@@ -57,8 +57,8 @@ describe("Walmyr Filho's cv", () => {
         });
     });
 
-    describe("Other projects and comunity contribution", {
-
+    xdescribe("Other projects and comunity contribution", {
+        //@TODO
     });
 });
 ```

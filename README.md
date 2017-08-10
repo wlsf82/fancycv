@@ -19,7 +19,7 @@ describe("Walmyr Filho's cv", () => {
     });
 
     describe("Professional experience", () => {
-        it("should verify you current role base on your current, previous and older job", () => {
+        it("should verify your current role based on your current, previous and older jobs", () => {
             const jobs = {
                 current: {
                     company: "appear.in",
